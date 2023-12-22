@@ -9,7 +9,7 @@ document.addEventListener('mousemove', function(e) {
   document.body.style.cursor = 'none';
 
   document.addEventListener('mouseleave', function() {
-    document.body.removeChild(cursor);
+   // document.body.removeChild(cursor);
     document.body.style.cursor = 'auto';
   });
 });
