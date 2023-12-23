@@ -1,5 +1,5 @@
 body {
-  cursor: none; /* Hide default cursor */
+ cursor: url('https://image.shutterstock.com/image-photo/young-green-anaconda-aka-eunectus-260nw-1884926236.png'),auto; 
 }
 
 .container {
@@ -16,13 +16,3 @@ body {
   font-size: 24px;
 }
 
-/* Define the custom cursor */
-.custom-cursor {
-  width: 50px; /* Adjust dimensions as needed */
-  height: 50px;
-  position: absolute;
-  pointer-events: none; /* Ensure it doesn't interfere with clicking */
-  z-index: 9999; /* Make sure it's above other elements */
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gettyimages.co.uk%2Fphotos%2Fmonkey-middle-finger&psig=AOvVaw1bC4Tb2rliijmNaNzi5759&ust=1703332216011000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjyh5P9ooMDFQAAAAAdAAAAABAD'); /* Replace 'monkey_cursor.png' with your image */
-  background-size: cover;
-}
