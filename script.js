@@ -1,15 +1,16 @@
-document.addEventListener('mousemove', function(e) {
-  const cursor = document.createElement('div');
-  cursor.classList.add('custom-cursor');
-  document.body.appendChild(cursor);
 
-  cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
-  cursor.style.top = e.pageY - cursor.offsetHeight / 2 + 'px';
 
-  document.body.style.cursor = 'none';
 
-  document.addEventListener('mouseleave', function() {
-   // document.body.removeChild(cursor);
-    document.body.style.cursor = 'auto';
-  });
-});
+const positionElement = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+  const cursorSmall = document.querySelector('.small');
+  const cursorBig = document.querySelector('.big');
+   
+  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  
+  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+ 
+}
+
+window.addEventListener('mousemove', positionElement)
