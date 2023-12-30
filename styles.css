@@ -1,5 +1,5 @@
 body {
- cursor: url('cursor.cur'),auto; 
+ cursor: url('cursor.cur'),auto 32 32,pointer; 
 }
 
 .container {
